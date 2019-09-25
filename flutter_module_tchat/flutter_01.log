@@ -1,0 +1,67 @@
+Flutter crash report; please file at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter --no-color run --machine --track-widget-creation --device-id=ZY224B3FKC lib/main.dart
+
+## exception
+
+SocketException: SocketException: Write failed (OS Error: Broken pipe, errno = 32), port = 0
+
+```
+null```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, v1.7.8+hotfix.4, on Mac OS X 10.14.5 18F132, locale zh-Hans-CN)
+    • Flutter version 1.7.8+hotfix.4 at /Users/mac/Downloads/flutter
+    • Framework revision 20e59316b8 (4 weeks ago), 2019-07-18 20:04:33 -0700
+    • Engine revision fee001c93f
+    • Dart version 2.4.0
+
+[!] Android toolchain - develop for Android devices (Android SDK version 29.0.0)
+    • Android SDK at /Users/mac/Library/Android/sdk
+    • Android NDK location not configured (optional; useful for native profiling support)
+    • Platform android-29, build-tools 29.0.0
+    • Java binary at: /Applications/Android Studio 2.app/Contents/jre/jdk/Contents/Home/bin/java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_152-release-1343-b01)
+    ! Some Android licenses not accepted.  To resolve this, run: flutter doctor --android-licenses
+
+[!] Xcode - develop for iOS and macOS
+    ✗ Xcode installation is incomplete; a full installation is necessary for iOS development.
+      Download at: https://developer.apple.com/xcode/download/
+      Or install Xcode via the App Store.
+      Once installed, run:
+        sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
+    ✗ CocoaPods installed but not initialized.
+        CocoaPods is used to retrieve the iOS and macOS platform side's plugin code that responds to your plugin usage on the Dart side.
+        Without CocoaPods, plugins will not work on iOS or macOS.
+        For more info, see https://flutter.dev/platform-plugins
+      To initialize CocoaPods, run:
+        pod setup
+      once to finalize CocoaPods' installation.
+
+[✗] iOS tools - develop for iOS devices
+    ✗ libimobiledevice and ideviceinstaller are not installed. To install with Brew, run:
+        brew update
+        brew install --HEAD usbmuxd
+        brew link usbmuxd
+        brew install --HEAD libimobiledevice
+        brew install ideviceinstaller
+    ✗ ios-deploy not installed. To install:
+        brew install ios-deploy
+    ! Brew can be used to install tools for iOS device development.
+      Download brew at https://brew.sh/.
+
+[✓] Android Studio (version 3.4)
+    • Android Studio at /Applications/Android Studio 2.app/Contents
+    • Flutter plugin version 38.1.1
+    • Dart plugin version 183.6270
+    • Java version OpenJDK Runtime Environment (build 1.8.0_152-release-1343-b01)
+
+[✓] Connected device (1 available)
+    • Moto Z2 • ZY224B3FKC • android-arm64 • Android 9 (API 28)
+
+! Doctor found issues in 3 categories.
+```

@@ -1,0 +1,13 @@
+CLANG_CXX_LANGUAGE_STANDARD = c++11
+CLANG_CXX_LIBRARY = libc++
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../flutter_more/.ios/Flutter" "${PODS_ROOT}/../../flutter_more/.ios/Flutter/engine" "${PODS_ROOT}/BQMM/BQMM"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/BQMM" "${PODS_ROOT}/Headers/Public/FlutterPluginRegistrant" "${PODS_ROOT}/Headers/Public/XZQRCode_OC" "${PODS_ROOT}/Headers/Public/flutter_boost" "${PODS_ROOT}/Headers/Public/libqrencode" "${PODS_ROOT}/Headers/Public/path_provider"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/BQMM" "${PODS_CONFIGURATION_BUILD_DIR}/FlutterPluginRegistrant" "${PODS_CONFIGURATION_BUILD_DIR}/XZQRCode_OC" "${PODS_CONFIGURATION_BUILD_DIR}/flutter_boost" "${PODS_CONFIGURATION_BUILD_DIR}/libqrencode" "${PODS_CONFIGURATION_BUILD_DIR}/path_provider"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/FlutterPluginRegistrant" -isystem "${PODS_ROOT}/Headers/Public/flutter_boost" -isystem "${PODS_ROOT}/Headers/Public/path_provider" -iframework "${PODS_ROOT}/../../flutter_more/.ios/Flutter/engine" -iframework "${PODS_ROOT}/../../flutter_more/.ios/Flutter"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"BQMM" -l"FlutterPluginRegistrant" -l"XZQRCode_OC" -l"c++" -l"flutter_boost" -l"libqrencode" -l"path_provider" -l"z" -framework "App" -framework "BQMM" -framework "Flutter" -framework "UIKit"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
