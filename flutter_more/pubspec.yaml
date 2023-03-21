@@ -29,9 +29,9 @@ dependencies:
   cupertino_icons: ^0.1.2
   banner_view:
     git: https://github.com/yangxiaoweihn/BannerView.git
-  dio: 2.1.13
+  dio: ">=2.1.13 <6.0.0"
 #  dio_http_cache: ^0.1.2
-  extended_image: ^0.5.5
+  extended_image: ">=0.5.5 <8.0.0"
   loading_more_list: ^0.3.7
   pull_to_refresh_notification: ^0.3.2
   font_awesome_flutter: ^8.0.1
